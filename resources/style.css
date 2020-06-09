@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* Navbar section */
+
+nav {
+    background-color: brown;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+#navbar a:hover {
+    background-color: cadetblue;
+}
+
+#navbar a:last-child {
+    margin-right: 20px;
+}
+
+/* Welcome section */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: rgb(214, 130, 70);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 3.5rem;
+    text-shadow: 5px 5px 10px brown;
+}
+
+p {
+    font-family: 'Crafty Girls', cursive;
+    color: brown;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* Projects section */
+
+#projects {
+    text-align: center;
+}
+
+body {
+    background-color: #6ba2b4;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin: 80px auto;
+    border-bottom: 3px solid white;
+    font-size: 3rem;
+    width: fit-content;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.project-tile {
+    width: 28%;
+    background-color: darkslateblue;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-img {
+    width: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.project-title {
+    text-align: center;
+    background-color: darkslateblue;
+    color: white;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#button {
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    font-size: 20px;
+    width: 15%;
+    padding: 18px 0;
+    margin-bottom: 100px;
+    color: white;
+    background-color: rgb(109, 106, 91);
+    border-radius: 3px;
+}
+
+#button:hover {
+    background-color:chocolate;
+}
+
+/* Contact section */
+
+#contact {
+    background-color: rgb(59, 78, 34);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 5px solid brown;
+}
+
+#contact h3 {
+    font-size: 4rem;
+    margin-top: 11rem;
+}
+
+#contact p {
+    color: rgb(93, 189, 233);
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+}
+
+#contact div {
+    margin-bottom: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#contact a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+#contact a + a {
+    margin-left: 20px;
+}
+
+#contact a:hover {
+    position: relative;
+    top: 5px;
+    text-shadow: 5px 2px 10px rgb(103, 219, 219);
+}
+
+/* Footer section */
+
+#footer {
+    background-color: rgb(59, 78, 34);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 20px;
+}
+
+#footer span {
+    display: block;
+    padding: 1.5rem;
+    font-size: 16px;
+    color: white;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1000px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    #projects .project-title {
+        font-size: 1.5rem;
+    }
+
+    #projects .project-tile {
+        width: 40%;
+    }
+
+    #contact div {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    #about {
+        height: auto;
+    }
+
+    header {
+        flex-grow: 0;
+        height: 70vh;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin: 70px auto;
+    }
+
+    #projects .project-tile {
+        width: 80%;
+    }
+
+    #projects .project-title {
+        font-size: 1.5rem;
+    }
+
+    #button {
+        width: 25%;
+    }
+
+    #contact a {
+        font-size: 20px;
+    }
+}
+
